@@ -190,7 +190,7 @@
         } else if (itemCount !== undefined) {
           showCount = itemCount;
         } else {
-          showCount = 1;
+          showCount = 0;
         }
         items.forEach((item, i) => {
           if (i < showCount) item.classList.add('visible');
@@ -241,7 +241,7 @@
       if (slide.hasAttribute('data-progressive')) {
         const items = getProgressiveItems(slide);
         const visible = Array.from(items).filter(i => i.classList.contains('visible'));
-        if (visible.length > 1) {
+        if (visible.length > 0) {
           visible[visible.length - 1].classList.remove('visible');
           updateHash();
           return;
