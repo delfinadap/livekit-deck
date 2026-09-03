@@ -74,6 +74,15 @@
       color: #888;
     }
 
+    h2 + .content {
+      margin-top: 30px;
+    }
+
+    .content.compact {
+      font-size: 1.6rem;
+      max-width: 1100px;
+    }
+
     .slide[data-progressive] .content li {
       opacity: 0;
       transition: opacity 0.2s ease;
@@ -104,17 +113,12 @@
 
   <!-- Slide 1: Title -->
   <div class="slide">
-    <h1>Developer advocacy at LiveKit</h1>
-    <div class="subtitle">a working plan by YK</div>
+    <h1>Dev advocacy plans at LiveKit (draft #1)</h1>
   </div>
 
-  <!-- Slide 2: Big picture header -->
-  <div class="slide">
-    <h1>The big picture</h1>
-  </div>
-
-  <!-- Slide 3: Core thesis -->
+  <!-- Slide 2: Big picture -->
   <div class="slide" data-progressive>
+    <h2>The big picture</h2>
     <div class="content">
       <ul>
         <li>Real-time audio and video are hard: latency, packet drops, reconnection</li>
@@ -125,13 +129,9 @@
     </div>
   </div>
 
-  <!-- Slide 4: My approach header -->
-  <div class="slide">
-    <h1>My approach: become the expert in public</h1>
-  </div>
-
-  <!-- Slide 5: Approach details -->
+  <!-- Slide 3: Approach -->
   <div class="slide" data-progressive>
+    <h2>Become the expert in public</h2>
     <div class="content">
       <ul>
         <li>Create content: blog posts, videos, talks</li>
@@ -143,14 +143,9 @@
     </div>
   </div>
 
-  <!-- Slide 6: SF thesis -->
-  <div class="slide">
-    <h2>Start in San Francisco and expand</h2>
-    <div class="subtitle">or global content first, then SF. both loops feed each other</div>
-  </div>
-
-  <!-- Slide 7: Content repurposing -->
+  <!-- Slide 4: SF thesis + repurposing -->
   <div class="slide" data-progressive>
+    <h2>Start in San Francisco and expand</h2>
     <div class="content">
       <ul>
         <li>Present and record talks in San Francisco</li>
@@ -161,65 +156,17 @@
     </div>
   </div>
 
-  <!-- Slide 8: Timeline header -->
-  <div class="slide">
-    <h1>30 / 90 / 360 days</h1>
-  </div>
-
-  <!-- Slide 9: 30 days -->
+  <!-- Slide 5: 30/90/360 + logistics -->
   <div class="slide" data-progressive>
-    <h2>First 30 days</h2>
-    <div class="content">
+    <h2>30 / 90 / 360 days</h2>
+    <div class="content compact">
       <ul>
-        <li>Learn as much as possible</li>
-        <li>Improve existing processes and materials</li>
-        <li>Join existing events</li>
-        <li>Start applying to speak, without overcommitting</li>
+        <li><strong>30:</strong> learn as much as possible, improve existing processes, join existing events, start applying to speak</li>
+        <li><strong>90:</strong> set the direction, try a few things and measure: hackathons, speaking events, Sourcegraph-style meetups</li>
+        <li><strong>360:</strong> scale what works, follow the data (YouTube? Reddit? search and AI optimization?), build the flywheel: customers → case studies → talks → videos</li>
+        <li><strong>Logistics:</strong> based in Vancouver, SF up to twice a month, same model as Sourcegraph</li>
       </ul>
     </div>
-  </div>
-
-  <!-- Slide 10: 90 days -->
-  <div class="slide" data-progressive>
-    <h2>First 90 days</h2>
-    <div class="content">
-      <ul>
-        <li>Set the direction</li>
-        <li>Try a few different things and measure what works best</li>
-        <li>Hackathons? Speaking events? Sourcegraph-style meetups?</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Slide 11: 360 days -->
-  <div class="slide" data-progressive>
-    <h2>First 360 days</h2>
-    <div class="content">
-      <ul>
-        <li>Scale the programs that work</li>
-        <li>Follow the data: YouTube? Reddit? Search and AI optimization? Where do people come from?</li>
-        <li>Build the flywheel: customers → case studies → talks → videos → more developers</li>
-        <li>Example: "How OpenAI achieved real-time voice latency at scale" as a conference talk</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Slide 12: Logistics -->
-  <div class="slide" data-progressive>
-    <h2>Logistics</h2>
-    <div class="content">
-      <ul>
-        <li>Based in Vancouver</li>
-        <li>Travel to San Francisco up to twice a month</li>
-        <li>Same model I ran successfully at Sourcegraph</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Slide 13: Close -->
-  <div class="slide">
-    <h1>Let's build the realtime layer's audience</h1>
-    <div class="subtitle">YK</div>
   </div>
 
   <div class="progress"></div>
